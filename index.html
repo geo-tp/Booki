@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Booki, Trouvez votre hébergement pour des vacancesde rêve !</title>
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <meta name="title" content="Booki - Trouvez votre hebergement" />
+    <meta
+      name="description"
+      content="Booki vous permet de trouver un hebergement de rêve pour vos prochaines vacances."
+    />
+
+    <link rel="stylesheet" href="style/normalize.css" />
+    <link rel="stylesheet" href="style/style.css" />
+    <script
+      defer
+      src="https://use.fontawesome.com/releases/v5.15.4/js/all.js"
+      integrity="sha384-rOA1PnstxnOBLzCLMcre8ybwbTmemjzdNlILg8O7z1lUkLXozs4DHonlDtnE7fpc"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <body>
+    <!-- #### HEADER #### -->
+    <header class="header">
+      <img
+        class="header__logo"
+        src="./assets/logo/Booki.png"
+        alt="Logo Booki"
+      />
+      <nav class="header__nav">
+        <a class="header__nav__link" href="#">Hébergement</a>
+        <a class="header__nav__link" href="#">Activités</a>
+      </nav>
+    </header>
+    <!-- #### HEADER #### -->
+
+    <!--   #### SEARCH #### -->
+    <div class="search">
+      <h1 class="search__title">
+        Trouvez votre hébergement pour des vacances de rêve
+      </h1>
+
+      <p class="search__subtitle">
+        En plein centre de ville ou en pleine nature
+      </p>
+
+      <form class="search__bar" action="#" method="GET">
+        <i class="fas fa-map-marker-alt search__bar__icon"></i>
+        <input
+          class="search__bar__input"
+          type="search"
+          placeholder="Ville, Région, Pays..."
+          value="Marseille, France"
+        />
+        <button class="search__bar__submit">Rechercher</button>
+      </form>
+
+      <div class="search__filters">
+        <h2>Filtres</h2>
+        <div class="search__filters__item">
+          <i class="fas fa-money-bill search__filters__item__icon"></i>
+          <span class="search__filters__item__title">Economique</span>
+        </div>
+        <div class="search__filters__item">
+          <i class="fas fa-child search__filters__item__icon"></i>
+          <span class="search__filters__item__title">Familial</span>
+        </div>
+        <div class="search__filters__item">
+          <i class="fas fa-heart search__filters__item__icon"></i>
+          <span class="search__filters__item__title">Romantique</span>
+        </div>
+        <div class="search__filters__item">
+          <i class="fas fa-dog search__filters__item__icon"></i>
+          <span class="search__filters__item__title">Animaux autorisés</span>
+        </div>
+      </div>
+
+      <div class="search__results">
+        <i class="fas fa-info search__results__icon"></i>
+        <span class="search_results_text"
+          >Plus de 500 logements sont disponibles dans cette ville</span
+        >
+      </div>
+    </div>
+    <!--   #### SEARCH #### -->
+
+    <!--   #### POPULAR #### -->
+    <div class="main-container">
+      <div class="main-container__title">
+        <h2>Les plus populaires<h2>
+        <i class="fas fa-star main-container__icon"></i>
+      </div>
+    </div>
+    <!--   #### POPULAR #### -->
+  </body>
+
+  <footer class="footer">
+    <div class="footerColumnwrapper">
+      <div class="footerColumnwrapperColumn">
+        <h3 class="footerColumnwrapperColumnTitle">A propos</h3>
+        <a href="#" class="footerColumnwrapperColumnLink"
+          >Fonctionnement du site</a
+        >
+        <a href="#" class="footerColumnwrapperColumnLink"
+          >Conditions générales de vente</a
+        >
+        <a href="#" class="footerColumnwrapperColumnLink"
+          >Données et confidentialités</a
+        >
+      </div>
+      <div class="footerColumnwrapperColumn">
+        <h3 class="footerColumnwrapperColumnTitle">Nos hébergement</h3>
+        <a href="#" class="footerColumnwrapperColumnLink">Charte qualité</a>
+        <a href="#" class="footerColumnwrapperColumnLink"
+          >Soumettre votre hotel</a
+        >
+      </div>
+      <div class="footerColumnwrapperColumn">
+        <h3 class="footerColumnwrapperColumnTitle">Assitance</h3>
+        <a href="#" class="footerColumnwrapperColumnLink">Centre d'aide</a>
+        <a href="#" class="footerColumnwrapperColumnLink">Nous contacter</a>
+      </div>
+    </div>
+  </footer>
+</html>
