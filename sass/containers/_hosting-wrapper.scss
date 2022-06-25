@@ -1,0 +1,12 @@
+.hosting-wrapper {
+  display: flex;
+  flex-direction: row-reverse;
+
+  & div:first-child {
+    flex-basis: 30%;
+  }
+
+  & div:last-child {
+    flex-basis: 70%;
+  }
+}

@@ -5,7 +5,9 @@
   padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 30px;
-  margin-top: 20px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  position: relative;
 
   &__title {
     display: flex;
@@ -13,7 +15,14 @@
     align-items: center;
   }
 
+  &__icon {
+    font-size: 18px;
+    padding-right: 10px;
+  }
+
   &__more {
+    padding-left: 30px;
+    position: relative;
     font-size: 18px;
     font-weight: bold;
   }
@@ -21,6 +30,13 @@
   &__items {
     display: flex;
     justify-content: space-evenly;
+
     flex-wrap: wrap;
+  }
+
+  &__popular-items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }

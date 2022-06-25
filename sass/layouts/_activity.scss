@@ -1,11 +1,12 @@
 .activity {
-  height: 800px;
+  height: 700px;
   &__title {
   }
 
   &__columns {
     display: flex;
     justify-content: center;
+
     &__col {
       flex-basis: 25%;
       display: flex;

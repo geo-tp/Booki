@@ -20,21 +20,28 @@
   }
 
   &__title {
-    flex-basis: 80px;
     padding-left: 20px;
   }
 
   &--small {
-    height: 200px;
+    height: 250px;
 
     &__image {
-      flex-basis: 100px;
+      max-height: 80%;
+      & img {
+        object-fit: cover;
+      }
     }
   }
   &--medium {
-    height: 200px;
+    height: 320px;
     &__image {
-      flex-basis: 100px;
+      //   flex-basis: 100px;
+      max-height: 80%;
+
+      & img {
+        object-fit: cover;
+      }
     }
   }
 }
