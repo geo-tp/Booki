@@ -1,0 +1,26 @@
+.hosting {
+  background-color: $light-grey;
+  border-radius: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 10px;
+  padding-bottom: 30px;
+  margin-top: 20px;
+
+  &__title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  &__more {
+    font-size: 18px;
+    font-weight: bold;
+  }
+
+  &__items {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+  }
+}

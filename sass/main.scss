@@ -1,6 +1,13 @@
 @import "./utils/variables";
 @import "./base/global";
 @import "./base/typography";
-@import "./containers/main-container";
+@import "./components/search-bar";
+@import "./components/filter";
+@import "./components/card";
+@import "./components/card-column";
+@import "./components/card-basic";
+@import "./layouts/hosting";
+@import "./layouts/activity";
 @import "./layouts/header";
 @import "./layouts/search";
+@import "./layouts/footer";

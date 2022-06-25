@@ -1,0 +1,31 @@
+.search-bar {
+  display: flex;
+  align-items: center;
+
+  &__icon {
+    padding: 10px;
+    padding-left: 20px;
+    padding-right: 20px;
+    background-color: $light-grey;
+    border-radius: 20px 0px 0px 20px;
+    height: 30px;
+  }
+  &__input {
+    height: 50px;
+    border: 1px solid $grey;
+    padding-left: 20px;
+    font-size: 1.2em;
+    font-weight: bold;
+  }
+  &__submit {
+    height: 50px;
+    border-radius: 0px 20px 20px 0px;
+    background-color: $blue;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    border: none;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}

@@ -1,0 +1,20 @@
+.filter {
+  display: flex;
+  align-items: center;
+  border: 1px solid $grey;
+  border-radius: 35px;
+  max-width: 250px;
+  padding-right: 10px;
+
+  &__icon {
+    padding: 20px;
+    background-color: $light-blue;
+    border-radius: 100%;
+    color: $blue;
+  }
+  &__title {
+    padding: 18px;
+    font-size: 1.1em;
+    font-weight: bold;
+  }
+}

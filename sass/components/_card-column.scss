@@ -1,0 +1,22 @@
+.card-column {
+  margin-bottom: 20px;
+  height: 200px;
+  flex-direction: column;
+
+  &__image {
+    height: 60%;
+    & img {
+      border-radius: 20px 20px 0px 0px;
+    }
+  }
+  &__infos {
+    flex-basis: 40%;
+    padding-left: 15px;
+    padding-right: 5px;
+    display: block;
+  }
+
+  &__stars {
+    margin-top: 0;
+  }
+}

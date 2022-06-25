@@ -1,0 +1,40 @@
+.card-basic {
+  height: 600px;
+  display: flex;
+  flex-direction: column;
+  margin-right: 10px;
+  margin-left: 10px;
+  border: 1px solid $grey;
+  border-radius: 20px;
+
+  &__image {
+    flex-basis: 700px;
+    margin: 0;
+    padding: 0;
+    & img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      border-radius: 20px 20px 0px 0px;
+    }
+  }
+
+  &__title {
+    flex-basis: 80px;
+    padding-left: 20px;
+  }
+
+  &--small {
+    height: 200px;
+
+    &__image {
+      flex-basis: 100px;
+    }
+  }
+  &--medium {
+    height: 200px;
+    &__image {
+      flex-basis: 100px;
+    }
+  }
+}

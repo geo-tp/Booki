@@ -1,0 +1,19 @@
+.footer {
+  display: flex;
+  justify-content: space-evenly;
+  background-color: $light-grey;
+
+  &__col {
+    display: flex;
+    flex-direction: column;
+    &__title {
+    }
+
+    &__link {
+      color: black;
+      margin-top: 10px;
+      margin-bottom: 10px;
+      text-decoration: none;
+    }
+  }
+}
