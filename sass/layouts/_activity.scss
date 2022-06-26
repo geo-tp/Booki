@@ -20,7 +20,7 @@
   @include tablet-design {
     &__columns {
       &__col {
-        flex-basis: 50%;
+        flex-basis: 48%;
       }
     }
   }
@@ -28,7 +28,7 @@
   @include mobile-design {
     &__columns {
       &__col {
-        flex-basis: 100%;
+        flex-basis: 95%;
       }
     }
   }

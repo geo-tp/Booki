@@ -4,9 +4,12 @@
   align-items: center;
   max-width: $max-screen-width;
   margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
 
   &__logo {
     width: 110px;
+    padding-left: 30px;
   }
 
   &__nav {
@@ -14,34 +17,56 @@
     justify-content: space-between;
 
     &__link {
-      text-decoration: none;
-      padding: 20px;
-      color: black;
-      width: 100px;
-      margin: 10px;
-      text-align: center;
+      height: 100px;
+      display: flex;
+      align-items: center;
       border-top: 3px solid transparent;
-      margin: 0;
-
+      & a {
+        padding: 20px;
+        text-decoration: none;
+        color: black;
+        width: 100px;
+        margin: 10px;
+        text-align: center;
+        margin: 0;
+      }
       &:hover {
         border-top: 3px solid blue;
-        color: blue;
+        & a {
+          color: blue;
+        }
       }
     }
   }
 
   @include mobile-design {
     flex-direction: column;
+    padding-left: 0px;
+    padding-right: 0px;
+
+    &__logo {
+      margin-top: 30px;
+      padding-left: 0;
+    }
 
     &__nav {
+      margin-top: 20px;
       width: 100%;
       &__link {
         flex-basis: 50%;
         font-size: 18px;
+        height: 50px;
         border-bottom: 5px solid $light-grey;
+        justify-content: center;
+
+        & a {
+          width: 100%;
+          padding: 0;
+          margin: 0;
+        }
 
         &:hover {
-          border-top: none;
+          border-top: 3px solid transparent;
           border-bottom: 5px solid blue;
           color: blue;
         }

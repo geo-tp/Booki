@@ -14,7 +14,7 @@ body {
   padding-left: 20px;
   padding-right: 20px;
   background-color: #f2f2f2;
-  border-radius: 20px 0px 0px 20px;
+  border-radius: 15px 0px 0px 15px;
   height: 30px;
 }
 .search-bar__input {
@@ -27,7 +27,7 @@ body {
 }
 .search-bar__submit {
   height: 50px;
-  border-radius: 0px 20px 20px 0px;
+  border-radius: 0px 15px 15px 0px;
   background-color: #0065fc;
   color: white;
   font-size: 16px;
@@ -84,8 +84,7 @@ body {
 
 .card {
   flex-basis: 28%;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  margin-bottom: 30px;
   display: flex;
   height: 150px;
   background-color: white;
@@ -102,7 +101,7 @@ body {
 }
 .card__image img {
   width: 100%;
-  height: 120px;
+  height: 140px;
   object-fit: cover;
   border-radius: 20px 0px 0px 20px;
 }
@@ -138,8 +137,8 @@ body {
 
 .card-column {
   margin: 0;
-  margin-bottom: 20px;
-  height: 200px;
+  margin-bottom: 40px;
+  height: 210px;
   flex-direction: column;
   max-width: 28%;
 }
@@ -162,21 +161,22 @@ body {
 }
 @media screen and (max-width: 992px) {
   .card-column {
-    flex-basis: 40%;
-    max-width: 40%;
-    min-width: 40%;
+    flex-basis: 45%;
+    max-width: 45%;
+    min-width: 45%;
   }
 }
 @media screen and (max-width: 768px) {
   .card-column {
-    flex-basis: 100%;
-    max-width: 100%;
-    min-width: 100%;
+    flex-basis: 95%;
+    max-width: 95%;
+    min-width: 95%;
+    margin-bottom: 30px;
   }
 }
 
 .card-basic {
-  height: 400px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   margin-right: 10px;
@@ -200,26 +200,35 @@ body {
   padding-left: 20px;
 }
 .card-basic--small {
-  height: 170px;
+  height: 200px;
 }
 .card-basic--small__image {
-  max-height: 65%;
+  max-height: 73%;
 }
 .card-basic--small__image img {
   object-fit: cover;
 }
 .card-basic--medium {
-  height: 200px;
+  height: 260px;
 }
 .card-basic--medium__image {
-  max-height: 73%;
+  max-height: 75%;
 }
 .card-basic--medium__image img {
   object-fit: cover;
 }
 @media screen and (max-width: 992px) {
   .card-basic {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+  }
+  .card-basic--small {
+    height: 220px;
+  }
+  .card-basic--small__image {
+    max-height: 73%;
+  }
+  .card-basic--medium {
+    height: 230px;
   }
 }
 @media screen and (max-width: 768px) {
@@ -247,22 +256,30 @@ body {
   flex-basis: 30%;
 }
 .hosting-wrapper div:last-child {
-  flex-basis: 70%;
+  flex-basis: 68%;
+}
+.hosting-wrapper .hosting:first-child {
+  margin-left: 2%;
 }
 @media screen and (max-width: 992px) {
   .hosting-wrapper {
     flex-direction: column;
   }
-}
-@media screen and (max-width: 768px) {
+  .hosting-wrapper div:first-child {
+    margin-left: 0;
+  }
   .hosting-wrapper div:last-child {
     background-color: transparent;
   }
 }
-
 .filters-wrapper {
   display: flex;
   align-items: center;
+  margin-top: 15px;
+}
+.filters-wrapper__title {
+  padding-left: 10px;
+  padding-right: 20px;
 }
 @media screen and (max-width: 992px) {
   .filters-wrapper {
@@ -277,7 +294,6 @@ body {
   padding-right: 20px;
   padding-top: 10px;
   padding-bottom: 30px;
-  margin-right: 20px;
   margin-bottom: 20px;
   position: relative;
 }
@@ -285,7 +301,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding-left: 15px;
+  padding-left: 20px;
 }
 .hosting__icon {
   font-size: 18px;
@@ -308,9 +324,6 @@ body {
   justify-content: center;
 }
 @media screen and (max-width: 992px) {
-  .hosting {
-    margin-right: 0px;
-  }
   .hosting__title {
     padding-left: 0px;
   }
@@ -344,12 +357,12 @@ body {
 }
 @media screen and (max-width: 992px) {
   .activity__columns__col {
-    flex-basis: 50%;
+    flex-basis: 48%;
   }
 }
 @media screen and (max-width: 768px) {
   .activity__columns__col {
-    flex-basis: 100%;
+    flex-basis: 95%;
   }
 }
 
@@ -359,42 +372,66 @@ body {
   align-items: center;
   max-width: 1440px;
   margin: 0 auto;
+  padding-left: 10px;
+  padding-right: 10px;
 }
 .header__logo {
   width: 110px;
+  padding-left: 30px;
 }
 .header__nav {
   display: flex;
   justify-content: space-between;
 }
 .header__nav__link {
-  text-decoration: none;
+  height: 100px;
+  display: flex;
+  align-items: center;
+  border-top: 3px solid transparent;
+}
+.header__nav__link a {
   padding: 20px;
+  text-decoration: none;
   color: black;
   width: 100px;
   margin: 10px;
   text-align: center;
-  border-top: 3px solid transparent;
   margin: 0;
 }
 .header__nav__link:hover {
   border-top: 3px solid blue;
+}
+.header__nav__link:hover a {
   color: blue;
 }
 @media screen and (max-width: 768px) {
   .header {
     flex-direction: column;
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .header__logo {
+    margin-top: 30px;
+    padding-left: 0;
   }
   .header__nav {
+    margin-top: 20px;
     width: 100%;
   }
   .header__nav__link {
     flex-basis: 50%;
     font-size: 18px;
+    height: 50px;
     border-bottom: 5px solid #f2f2f2;
+    justify-content: center;
+  }
+  .header__nav__link a {
+    width: 100%;
+    padding: 0;
+    margin: 0;
   }
   .header__nav__link:hover {
-    border-top: none;
+    border-top: 3px solid transparent;
     border-bottom: 5px solid blue;
     color: blue;
   }
@@ -406,9 +443,11 @@ body {
 }
 .search__title {
   margin-bottom: 0;
+  font-size: 24px;
 }
 .search__subtitle {
   margin-top: 20px;
+  font-size: 16px;
 }
 .search__filters {
   display: flex;
@@ -419,6 +458,7 @@ body {
 .search__results {
   display: flex;
   align-items: center;
+  font-size: 14px;
   margin-top: 20px;
   margin-bottom: 30px;
 }
@@ -433,13 +473,32 @@ body {
   width: 12px;
   margin-right: 10px;
 }
+@media screen and (max-width: 768px) {
+  .search__title {
+    margin-top: 30px;
+    font-size: 26px;
+  }
+  .search__subtitle {
+    margin-top: 10px;
+    font-size: 18px;
+  }
+  .search__results {
+    font-size: 18px;
+  }
+}
+
 .footer {
   background-color: #f2f2f2;
+  padding-top: 20px;
+  padding-bottom: 50px;
+  padding-left: 30px;
 }
 .footer__content {
   max-width: 1440px;
   margin: 0 auto;
   display: flex;
+  padding-left: 30px;
+  padding-right: 30px;
 }
 .footer__content__col {
   display: flex;
@@ -459,7 +518,7 @@ body {
     padding-left: 20px;
   }
   .footer__content__col {
-    margin-bottom: 10px;
+    margin-bottom: 15px;
   }
 }
 

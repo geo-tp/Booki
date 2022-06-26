@@ -1,6 +1,12 @@
 .filters-wrapper {
   display: flex;
   align-items: center;
+  margin-top: 15px;
+
+  &__title {
+    padding-left: 10px;
+    padding-right: 20px;
+  }
 
   @include tablet-design {
     display: block;

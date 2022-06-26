@@ -1,5 +1,5 @@
 .card-basic {
-  height: 400px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   margin-right: 10px;
@@ -25,10 +25,10 @@
   }
 
   &--small {
-    height: 170px;
+    height: 200px;
 
     &__image {
-      max-height: 65%;
+      max-height: 73%;
       & img {
         object-fit: cover;
       }
@@ -36,10 +36,10 @@
   }
 
   &--medium {
-    height: 200px;
+    height: 260px;
     &__image {
       //   flex-basis: 100px;
-      max-height: 73%;
+      max-height: 75%;
 
       & img {
         object-fit: cover;
@@ -48,7 +48,18 @@
   }
 
   @include tablet-design {
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    &--small {
+      height: 220px;
+
+      &__image {
+        max-height: 73%;
+      }
+    }
+
+    &--medium {
+      height: 230px;
+    }
   }
 
   @include mobile-design {

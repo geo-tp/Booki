@@ -8,7 +8,7 @@
     padding-left: 20px;
     padding-right: 20px;
     background-color: $light-grey;
-    border-radius: 20px 0px 0px 20px;
+    border-radius: 15px 0px 0px 15px;
     height: 30px;
   }
   &__input {
@@ -21,7 +21,7 @@
   }
   &__submit {
     height: 50px;
-    border-radius: 0px 20px 20px 0px;
+    border-radius: 0px 15px 15px 0px;
     background-color: $blue;
     color: white;
     font-size: 16px;

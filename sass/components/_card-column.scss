@@ -1,7 +1,7 @@
 .card-column {
   margin: 0;
-  margin-bottom: 20px;
-  height: 200px;
+  margin-bottom: 40px;
+  height: 210px;
   flex-direction: column;
   max-width: 28%;
 
@@ -26,14 +26,15 @@
   }
 
   @include tablet-design {
-    flex-basis: 40%;
-    max-width: 40%;
-    min-width: 40%;
+    flex-basis: 45%;
+    max-width: 45%;
+    min-width: 45%;
   }
 
   @include mobile-design {
-    flex-basis: 100%;
-    max-width: 100%;
-    min-width: 100%;
+    flex-basis: 95%;
+    max-width: 95%;
+    min-width: 95%;
+    margin-bottom: 30px;
   }
 }

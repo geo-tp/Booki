@@ -7,16 +7,24 @@
   }
 
   & div:last-child {
-    flex-basis: 70%;
+    flex-basis: 68%;
+  }
+
+  & .hosting:first-child {
+    margin-left: 2%;
   }
 
   @include tablet-design {
     flex-direction: column;
-  }
 
-  @include mobile-design {
+    & div:first-child {
+      margin-left: 0;
+    }
     & div:last-child {
       background-color: transparent;
     }
+  }
+
+  @include mobile-design {
   }
 }
