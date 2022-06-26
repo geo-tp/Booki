@@ -9,6 +9,8 @@
   border-radius: 30px;
   font-size: 18px;
   font-weight: 300;
+  @include small-shadow;
+
   &__image {
     flex-basis: 40%;
     margin: 0;
@@ -45,6 +47,7 @@
 
     &__stars {
       margin-bottom: 0;
+
       &__active {
         color: $blue;
       }

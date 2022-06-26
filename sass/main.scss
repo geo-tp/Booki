@@ -1,4 +1,5 @@
 @import "./utils/variables";
+@import "./utils/mixins";
 @import "./base/global";
 @import "./base/typography";
 @import "./components/search-bar";
@@ -8,6 +9,7 @@
 @import "./components/card-basic";
 @import "./containers/main-wrapper";
 @import "./containers/hosting-wrapper";
+@import "./containers/filters-wrapper";
 @import "./layouts/hosting";
 @import "./layouts/activity";
 @import "./layouts/header";

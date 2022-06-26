@@ -9,4 +9,14 @@
   & div:last-child {
     flex-basis: 70%;
   }
+
+  @include tablet-design {
+    flex-direction: column;
+  }
+
+  @include mobile-design {
+    & div:last-child {
+      background-color: transparent;
+    }
+  }
 }

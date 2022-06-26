@@ -13,6 +13,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    padding-left: 15px;
   }
 
   &__icon {
@@ -38,5 +39,22 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
+  }
+
+  @include tablet-design {
+    margin-right: 0px;
+
+    &__title {
+      padding-left: 0px;
+    }
+  }
+
+  @include mobile-design {
+    border-radius: 0px;
+
+    &__more {
+      padding-left: 0px;
+      font-size: 22px;
+    }
   }
 }

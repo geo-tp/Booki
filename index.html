@@ -22,21 +22,21 @@
     ></script>
   </head>
   <body>
-    <div class="main-wrapper">
-      <!-- #### HEADER #### -->
-      <header class="header">
-        <img
-          class="header__logo"
-          src="./assets/logo/Booki.png"
-          alt="Logo Booki"
-        />
-        <nav class="header__nav">
-          <a class="header__nav__link" href="#">Hébergement</a>
-          <a class="header__nav__link" href="#">Activités</a>
-        </nav>
-      </header>
-      <!-- #### HEADER #### -->
+    <!-- #### HEADER #### -->
+    <header class="header">
+      <img
+        class="header__logo"
+        src="./assets/logo/Booki.png"
+        alt="Logo Booki"
+      />
+      <nav class="header__nav">
+        <a class="header__nav__link" href="#">Hébergement</a>
+        <a class="header__nav__link" href="#">Activités</a>
+      </nav>
+    </header>
+    <!-- #### HEADER #### -->
 
+    <div class="main-wrapper">
       <!--   #### SEARCH #### -->
       <div class="search">
         <h1 class="search__title">
@@ -55,26 +55,31 @@
             placeholder="Ville, Région, Pays..."
             value="Marseille, France"
           />
-          <button class="search-bar__submit">Rechercher</button>
+          <button class="search-bar__submit">
+            <span class="search-bar__submit_text">Rechercher</span
+            ><i class="search-bar__submit__icon fas fa-search"></i>
+          </button>
         </form>
 
-        <div class="search__filters">
-          <h2>Filtres</h2>
-          <div class="filter">
-            <i class="fas fa-money-bill filter__icon"></i>
-            <span class="filter__title">Economique</span>
-          </div>
-          <div class="filter">
-            <i class="fas fa-child filter__icon"></i>
-            <span class="filter__title">Familial</span>
-          </div>
-          <div class="filter">
-            <i class="fas fa-heart filter__icon"></i>
-            <span class="filter__title">Romantique</span>
-          </div>
-          <div class="filter">
-            <i class="fas fa-dog filter__icon"></i>
-            <span class="filter__title">Animaux autorisés</span>
+        <div class="filters-wrapper">
+          <h3>Filtres</h3>
+          <div class="search__filters">
+            <div class="filter">
+              <i class="fas fa-money-bill filter__icon"></i>
+              <span class="filter__title">Economique</span>
+            </div>
+            <div class="filter">
+              <i class="fas fa-child filter__icon"></i>
+              <span class="filter__title">Familial</span>
+            </div>
+            <div class="filter">
+              <i class="fas fa-heart filter__icon"></i>
+              <span class="filter__title">Romantique</span>
+            </div>
+            <div class="filter">
+              <i class="fas fa-dog filter__icon"></i>
+              <span class="filter__title">Animaux autorisés</span>
+            </div>
           </div>
         </div>
 
@@ -175,8 +180,7 @@
 
         <!-- #### HOSTING RESULTS #### -->
         <div class="hosting">
-          <h2>Hébergement à Marseille</h2>
-          <div class="hosting__items"></div>
+          <h2 class="hosting__title">Hébergement à Marseille</h2>
           <div class="hosting__items">
             <div class="card card-column">
               <div class="card__image card-column__image">
@@ -317,7 +321,7 @@
       </div>
       <!-- #### ACTIVITY RESULTS #### -->
       <div class="activity">
-        <h2>Activités à Marseille</h2>
+        <h2 class="activity__title">Activités à Marseille</h2>
         <div class="activity__columns">
           <div class="activity__columns__col">
             <div class="card-basic">
@@ -372,7 +376,7 @@
               <h3 class="card-basic__title">Notre-Dame-De-La-Garde</h3>
             </div>
             <div class="card-basic card-basic--medium">
-              <div class="card-basic__image card-basic--small__image">
+              <div class="card-basic__image card-basic--medium__image">
                 <img
                   src="./assets/activites/3_medium/lena-paulin-wH2-EJoDcV0-unsplash.jpg"
                   alt="Activité Parc Longchamp"
@@ -388,21 +392,29 @@
   </body>
 
   <footer class="footer">
-    <div class="footer__col">
-      <h3 class="footer__col__title">A propos</h3>
-      <a href="#" class="footer__col__link">Fonctionnement du site</a>
-      <a href="#" class="footer__col__link">Conditions générales de vente</a>
-      <a href="#" class="footer__col__link">Données et confidentialités</a>
-    </div>
-    <div class="footer__col">
-      <h3 class="footer__col__title">Nos hébergements</h3>
-      <a href="#" class="footer__col__link">Charte qualité</a>
-      <a href="#" class="footer__col__link">Soumettre votre hôtel</a>
-    </div>
-    <div class="footer__col">
-      <h3 class="footer__col__title">Assitance</h3>
-      <a href="#" class="footer__col__link">Centre d'aide</a>
-      <a href="#" class="footer__col__link">Nous contacter</a>
+    <div class="footer__content">
+      <div class="footer__content__col">
+        <h3 class="footer__content__col__title">A propos</h3>
+        <a href="#" class="footer__content__col__link"
+          >Fonctionnement du site</a
+        >
+        <a href="#" class="footer__content__col__link"
+          >Conditions générales de vente</a
+        >
+        <a href="#" class="footer__content__col__link"
+          >Données et confidentialités</a
+        >
+      </div>
+      <div class="footer__content__col">
+        <h3 class="footer__content__col__title">Nos hébergements</h3>
+        <a href="#" class="footer__content__col__link">Charte qualité</a>
+        <a href="#" class="footer__content__col__link">Soumettre votre hôtel</a>
+      </div>
+      <div class="footer__content__col">
+        <h3 class="footer__col__title">Assitance</h3>
+        <a href="#" class="footer__content__col__link">Centre d'aide</a>
+        <a href="#" class="footer__content__col__link">Nous contacter</a>
+      </div>
     </div>
   </footer>
 </html>

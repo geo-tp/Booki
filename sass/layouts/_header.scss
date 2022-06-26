@@ -2,6 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  max-width: $max-screen-width;
+  margin: 0 auto;
 
   &__logo {
     width: 110px;
@@ -18,10 +20,31 @@
       width: 100px;
       margin: 10px;
       text-align: center;
+      border-top: 3px solid transparent;
+      margin: 0;
 
       &:hover {
         border-top: 3px solid blue;
         color: blue;
+      }
+    }
+  }
+
+  @include mobile-design {
+    flex-direction: column;
+
+    &__nav {
+      width: 100%;
+      &__link {
+        flex-basis: 50%;
+        font-size: 18px;
+        border-bottom: 5px solid $light-grey;
+
+        &:hover {
+          border-top: none;
+          border-bottom: 5px solid blue;
+          color: blue;
+        }
       }
     }
   }
