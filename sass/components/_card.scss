@@ -8,7 +8,14 @@
   border-radius: 30px;
   font-size: 18px;
   font-weight: 300;
+  transition: all 300ms;
+
   @include small-shadow;
+
+  &:hover {
+    transform: translateY(-7px);
+    @include medium-shadow;
+  }
 
   &__image {
     flex-basis: 40%;
@@ -28,15 +35,16 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    position: relative;
 
     &__title {
       font-size: 18px;
       margin-bottom: 0;
-      margin-top: 0;
+      margin-top: 10px;
     }
 
     &__pricing {
-      margin-top: 0;
+      margin-top: 0px;
       font-size: 16px;
     }
 
@@ -46,6 +54,8 @@
 
     &__stars {
       margin-bottom: 0;
+      position: absolute;
+      bottom: 5%;
 
       &__active {
         color: $blue;
@@ -53,6 +63,15 @@
 
       &__inactive {
         color: $grey;
+      }
+    }
+  }
+
+  @include mobile-design {
+    &__infos {
+      &__pricing {
+        margin-top: 5px;
+        font-size: 18px;
       }
     }
   }
