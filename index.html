@@ -9,8 +9,8 @@
       content="Booki vous permet de trouver un hebergement de rêve pour vos prochaines vacances."
     />
     <title>Booki, Trouvez votre hébergement pour les vacances</title>
-    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="style/normalize.css" />
+    <link rel="stylesheet" href="./css/styles.css" />
     <link rel="icon" href="./assets/logo/favicon.png" />
     <link
       rel="icon"
@@ -46,7 +46,7 @@
         alt="Logo Booki"
       />
       <nav class="header__nav">
-        <a href="#hosting" class="header__nav__link header__nav__link--active">
+        <a href="#hosting" class="header__nav__link">
           <span>Hébergements</span>
         </a>
         <a href="#activity" class="header__nav__link">
@@ -73,8 +73,8 @@
           <input
             class="search-bar__input"
             type="search"
-            placeholder="Ville, Région, Pays..."
-            value="Marseille, France"
+            placeholder="Marseille, France"
+            value=""
           />
           <button class="search-bar__submit">
             <span class="search-bar__submit_text">Rechercher</span
@@ -134,7 +134,7 @@
                   <h3 class="card__infos__title">Hôtel Le soleil du matin</h3>
                   <p class="card__infos__pricing">
                     Nuit à partir de
-                    <span class="card__infos__price">128€</span>
+                    128<span class="card__infos__price">€</span>
                   </p>
                 </div>
                 <p class="card__infos__stars">
@@ -160,7 +160,7 @@
                   </h3>
                   <p class="card__infos__pricing">
                     Nuit à partir de
-                    <span class="card__infos__price">71€</span>
+                    71<span class="card__infos__price">€</span>
                   </p>
                 </div>
                 <p class="card__infos__stars">
@@ -184,7 +184,7 @@
                   <h3 class="card__infos__title">Hôtel Tout bleu et Blanc</h3>
                   <p class="card__infos__pricing">
                     Nuit à partir de
-                    <span class="card__infos__price">68€</span>
+                    68<span class="card__infos__price">€</span>
                   </p>
                 </div>
                 <p class="card__infos__stars">
@@ -237,7 +237,7 @@
                 <h3 class="card__infos__title">Hôtel du port</h3>
                 <p class="card__infos__pricing">
                   Nuit à partir de
-                  <span class="card__infos__price">52€</span>
+                  52<span class="card__infos__price">€</span>
                 </p>
                 <p class="card__infos__stars">
                   <i class="fas fa-star card__infos__stars__active"></i>
@@ -259,7 +259,7 @@
                 <h3 class="card__infos__title">Hôtel Les mouettes</h3>
                 <p class="card__infos__pricing">
                   Nuit à partir de
-                  <span class="card__infos__price">76€</span>
+                  76<span class="card__infos__price">€</span>
                 </p>
                 <p class="card__infos__stars">
                   <i class="fas fa-star card__infos__stars__active"></i>
@@ -281,7 +281,7 @@
                 <h3 class="card__infos__title">Hôtel de la mer</h3>
                 <p class="card__infos__pricing">
                   Nuit à partir de
-                  <span class="card__infos__price">46€</span>
+                  46<span class="card__infos__price">€</span>
                 </p>
                 <p class="card__infos__stars">
                   <i class="fas fa-star card__infos__stars__active"></i>
@@ -325,7 +325,7 @@
                 <h3 class="card__infos__title">Hôtel chez Amina</h3>
                 <p class="card__infos__pricing">
                   Nuit à partir de
-                  <span class="card__infos__price">96€</span>
+                  96<span class="card__infos__price">€</span>
                 </p>
                 <p class="card__infos__stars">
                   <i class="fas fa-star card__infos__stars__active"></i>
@@ -337,7 +337,7 @@
               </div>
             </a>
           </div>
-          <p class="hosting__more">Afficher plus</p>
+          <a href='#' class="hosting__more">Afficher plus</a>
         </div>
         <!-- END CURRENT RESULTS -->
       </section>
@@ -444,6 +444,6 @@
         </div>
       </div>
     </footer>
-    <!-- FOOTER -->
+    <!-- END FOOTER -->
   </body>
 </html>

@@ -441,14 +441,11 @@ a {
   text-align: center;
   margin: 0;
 }
-.header__nav__link--active {
-  border-top: 3px solid blue;
-}
-.header__nav__link--active span {
-  color: blue;
-}
 .header__nav__link:hover {
-  opacity: 0.7;
+  border-top: 3px solid #0065fc;
+}
+.header__nav__link:hover span {
+  color: #0065fc;
 }
 @media screen and (max-width: 768px) {
   .header {
@@ -478,15 +475,11 @@ a {
   }
   .header__nav__link:hover {
     border-top: 3px solid transparent;
-    border-bottom: 5px solid blue;
-    color: blue;
+    border-bottom: 5px solid #0065fc;
+    color: #0065fc;
   }
-  .header__nav__link--active {
-    border-top: 3px solid transparent;
-    border-bottom: 5px solid blue;
-  }
-  .header__nav__link--active a {
-    color: blue;
+  .header__nav__link:hover span {
+    color: #0065fc;
   }
 }
 

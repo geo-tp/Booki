@@ -32,15 +32,12 @@
         text-align: center;
         margin: 0;
       }
-      &--active {
-        border-top: 3px solid blue;
-        & span {
-          color: blue;
-        }
-      }
 
       &:hover {
-        opacity: 0.7;
+        border-top: 3px solid $blue;
+        & span {
+          color: $blue;
+        }
       }
     }
   }
@@ -73,17 +70,20 @@
 
         &:hover {
           border-top: 3px solid transparent;
-          border-bottom: 5px solid blue;
-          color: blue;
-        }
+          border-bottom: 5px solid $blue;
+          color: $blue;
 
-        &--active {
-          border-top: 3px solid transparent;
-          border-bottom: 5px solid blue;
-          & a {
-            color: blue;
+          & span {
+            color: $blue;
+
           }
         }
+        
+
+        // &--active {
+        //   border-top: 3px solid transparent;
+        //   border-bottom: 5px solid $blue;
+        // }
       }
     }
   }
